@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+.txtcenter {
+    position: absolute;
+    left: 25%;
+    cursor: pointer;
+
+}
+
+#stad {
+    width: 100vw;
+    height: 100vh;
+}
+
+.goalpost {
+    z-index: 10;
+    height: 21vh;
+    width: 5vw;
+    position: absolute;
+    top: 40vh;
+    right: 9vw;
+}
+
+#player {
+    visibility: hidden;
+    z-index: 100;
+    height: 18vh;
+    width: 5vw;
+    position: absolute;
+    top: 35vh;
+    right: 24vw;
+}
+
+#ball {
+    visibility: hidden;
+    z-index: 100;
+    height: 4vh;
+    width: 2vw;
+    position: absolute;
+    top: 47vh;
+    right: 22vw;
+}
+
+#keeper {
+    visibility: hidden;
+    height: 8vh;
+    z-index: 100;
+    width: 5vw;
+    position: absolute;
+    top: 46vh;
+    right: 12vw;
+
+}
+
+.ballleft {
+    animation: BL 1s linear 3;
+}
+
+.ballmid {
+    animation: BM 1s linear 3;
+}
+
+.ballright {
+    animation: BR 1s linear 3;
+}
+
+@keyframes BL {
+    0% {
+        z-index: 100;
+        height: 4vh;
+        width: 2vw;
+        position: absolute;
+        top: 47vh;
+        right: 22vw;
+    }
+
+    100% {
+        z-index: 100;
+        height: 4vh;
+        width: 2vw;
+        position: absolute;
+        top: 42vh;
+        right: 10vw;
+    }
+}
+
+@keyframes BM {
+    0% {
+        z-index: 100;
+        height: 4vh;
+        width: 2vw;
+        position: absolute;
+        top: 47vh;
+        right: 22vw;
+    }
+
+    100% {
+        z-index: 100;
+        height: 4vh;
+        width: 2vw;
+        position: absolute;
+        top: 47vh;
+        right: 10vw;
+    }
+}
+
+@keyframes BR {
+    0% {
+        z-index: 100;
+        height: 4vh;
+        width: 2vw;
+        position: absolute;
+        top: 47vh;
+        right: 22vw;
+    }
+
+    100% {
+        z-index: 100;
+        height: 4vh;
+        width: 2vw;
+        position: absolute;
+        top: 55vh;
+        right: 10vw;
+    }
+}
+
+.keepertop {
+    animation: GT 1.2s linear 2;
+}
+
+.keeperbottom {
+    animation: GB 1.2s linear 2;
+}
+
+@keyframes GT {
+    0% {
+        height: 8vh;
+        z-index: 100;
+        width: 5vw;
+        position: absolute;
+        top: 46vh;
+        right: 12vw;
+    }
+
+    100% {
+        height: 8vh;
+        z-index: 100;
+        width: 5vw;
+        position: absolute;
+        top: 38vh;
+        right: 12vw;
+    }
+
+}
+
+@keyframes GB {
+    0% {
+        height: 8vh;
+        z-index: 100;
+        width: 5vw;
+        position: absolute;
+        top: 46vh;
+        right: 12vw;
+    }
+
+    100% {
+        height: 8vh;
+        z-index: 100;
+        width: 5vw;
+        position: absolute;
+        top: 54vh;
+        right: 12vw;
+    }
+
+}
+
+.gameOver {
+    z-index: 10;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    font-size: 80px;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(103, 4, 29);
+}
+
+.goal {
+    z-index: 10;
+    position: absolute;
+    top: 40%;
+    left: 42%;
+    font-size: 80px;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(103, 4, 29);
+}
+
+#cr {
+    height: 30vh;
+    position: absolute;
+    top: 25vh;
+    left: 24vw;
+}

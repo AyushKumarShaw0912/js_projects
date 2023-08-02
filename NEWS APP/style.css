@@ -1,0 +1,45 @@
+*{
+    font-family: 'Tilt Neon', cursive;
+}
+:root{
+    --body-color:#efefef;
+    --nav-color:#1876f2;
+    --bg-color:#fff;
+    --text-color:black;
+}
+.darktheme{
+    --body-color:#3f3c3cbb;
+    --nav-color:#000;
+    --bg-color:#000;
+    --text-color:rgb(248, 239, 239);
+    
+}
+#navbar{
+    background-color: var(--nav-color);
+    transition: background 0.3s;
+}
+body {
+    background-color:var(--body-color);
+    transition: background 0.3s;
+}
+#darkBtn{
+color: aliceblue;
+}
+#darkbtn span{
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border-radius: 50%;
+    display: inline-block;
+}
+#darkbtn.dark-btn-on{
+    padding-left: 23px;
+    background: #0a0a0a;
+}
+.heading1{
+    color: var(--text-color);
+}
+.to-dark{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
